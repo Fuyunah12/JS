@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    <h1 id="p1"></h1>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, a.</p>
+<script>
+            let newName = prompt('de o nome pra vc')
+        let p1 = window.document.getElementById('p1')
+        p1.innerHTML =  `<p> Seu nome é <strong>${newName}</strong><p><br> Seu nome tem <strong> ${newName.length}<strong> Letras.`
+        p1.style.fontSize =  "18pt"
+</script>
+</body>
+</html>
