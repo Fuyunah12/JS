@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em dom</title>
+
+
+    <style>
+
+        body{
+            background-color: #3333c9;
+        }
+
+        h1{
+            font-family: cursive;
+            font-size: 42pt;
+            color: aliceblue;
+        }
+        section{
+            margin: auto;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <section>
+        <h1>Somar números</h1>
+
+        <input type="number" name="txn" id="cxtxn1">   :D
+        <input type="number" name="txn" id="cxtxn2">
+
+        <button id="mais" onclick="somar()">soma</button>
+
+        <button id="menos" onclick="dimi()">subtraçâo</button>
+
+        <button id="mult" onclick="mult()">multiplicaçâo</button>
+
+        <button id="divs" onclick="div()"> divisâo</button>
+
+        <div id="res"></div>
+        
+    </section>
+    <script>
+
+        let res = window.document.getElementById('res')
+        let cx1 = window.document.getElementById('cxtxn1');
+        let cx2 = window.document.getElementById('cxtxn2');
+
+        let n1 = Number(cx1.value);
+        let n2 = Number(cx2.value);
+      
+        function somar(){
+
+            let res = window.document.getElementById('res')
+        let cx1 = window.document.getElementById('cxtxn1');
+        let cx2 = window.document.getElementById('cxtxn2');
+
+        let n1 = Number(cx1.value);
+        let n2 = Number(cx2.value);
+
+        let soma = n1 + n2;
+             res.innerHTML = `<p>O resultado é <strong>${soma}</strong></p>`
+        }
+
+        function dimi(){
+
+         let res = window.document.getElementById('res')
+        let cx1 = window.document.getElementById('cxtxn1');
+        let cx2 = window.document.getElementById('cxtxn2');
+
+        let n1 = Number(cx1.value);
+        let n2 = Number(cx2.value);
+
+            let menos = n1 - n2
+             res.innerHTML = `<p>O resultado é <strong>${menos}</strong></p>`
+        }
+        function mult(){
+
+            let res = window.document.getElementById('res')
+        let cx1 = window.document.getElementById('cxtxn1');
+        let cx2 = window.document.getElementById('cxtxn2');
+
+        let n1 = Number(cx1.value);
+        let n2 = Number(cx2.value);
+
+            let mult = n1 * n2
+             res.innerHTML = `<p>O resultado é <strong>${mult}</strong></p>`
+        }
+        function div(){
+
+            let res = window.document.getElementById('res')
+        let cx1 = window.document.getElementById('cxtxn1');
+        let cx2 = window.document.getElementById('cxtxn2');
+
+        let n1 = Number(cx1.value);
+        let n2 = Number(cx2.value);
+
+            let div = n1 / n2
+
+             res.innerHTML = `<p>O resultado é <strong>${div}</strong></p>`
+        }
+
+        
+    </script>
+</body>
+</html>
